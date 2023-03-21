@@ -1,24 +1,14 @@
-import logo from './logo.svg';
+import { RouterProvider } from 'react-router-dom';
 import './App.css';
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { router } from './Router/Router';
+// {/* <img src={image2} style={{WebkitMaskImage:`url(${svg})`,width:'500px', marginTop:'100px',WebkitMaskRepeat:'no-repeat'}} alt="" /> */ }
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RouterProvider router={router}>
+
+    </RouterProvider>
   );
 }
 
